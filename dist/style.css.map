@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./app/styles/main.scss"],"names":[],"mappings":"AACA;EAGI,0BAJW,EAKZ","file":"style.css","sourcesContent":["$steel: #3a3d46;\n:global {\n\n  body {\n    background-color: $steel;\n  }\n}\n\n\n\n// WEBPACK FOOTER //\n// ./app/styles/main.scss"],"sourceRoot":""}
