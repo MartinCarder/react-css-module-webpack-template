@@ -6,7 +6,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const extractSCSS = new ExtractTextPlugin({ filename: 'style.css', allChunks: true });
 
 const sassLoaders = () => {
-  const cssLoader = 'css-loader?modules&allowMultiple=true&sourceMap&importLoaders=1';
+  const cssLoader = 'css-loader?minimize&modules&allowMultiple=true&sourceMap&importLoaders=1';
   const postCssLoader = {
     loader: 'postcss-loader',
     options: {

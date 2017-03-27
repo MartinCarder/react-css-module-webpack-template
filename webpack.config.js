@@ -23,7 +23,6 @@ const common = merge(
           exclude: /node_modules/,
           use: [
             'babel-loader?cacheDirectory',
-            //'react-hot-loader/webpack',
           ],
           include: path.resolve(__dirname, 'app', 'index.js'),
         },
@@ -45,7 +44,8 @@ switch (process.env.npm_lifecycle_event) {
       common,
       {
         devtool: 'source-map',
-      }
+      },
+      parts.optimise()
     );
     break;
   default:
