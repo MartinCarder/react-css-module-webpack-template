@@ -11,7 +11,8 @@ exports.default = () =>
       compress: {
         warnings: false,
         screw_ie8: true
-      }
+      },
+      sourceMap: true
     })
   ]
 });
