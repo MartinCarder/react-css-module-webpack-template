@@ -3,7 +3,7 @@ const autoprefixer = require('autoprefixer');
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
-const extractSCSS = new ExtractTextPlugin({ filename: 'style.css', allChunks: true });
+const extractSCSS = new ExtractTextPlugin({ filename: 'style..min.css', allChunks: true });
 
 const sassLoaders = () => {
   const cssLoader = 'css-loader?minimize&modules&allowMultiple=true&sourceMap&importLoaders=1';

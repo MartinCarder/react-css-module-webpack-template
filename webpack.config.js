@@ -13,13 +13,13 @@ const common = merge(
   {
     entry: paths.app,
     output: {
-      filename: 'app.js',
+      filename: 'app.min.js',
       path: paths.dist,
     },
     module: {
       rules: [
         {
-          test: /\.jsx?$/,
+          test: /\.js?$/,
           exclude: /node_modules/,
           use: [
             'babel-loader?cacheDirectory',
