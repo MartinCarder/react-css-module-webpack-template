@@ -46,6 +46,7 @@ switch (process.env.npm_lifecycle_event) {
         devtool: 'source-map',
       },
       parts.optimise()
+      // parts.productionFlag()
     );
     break;
   default:
